@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawkins | Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/5156def407.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="overall-container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="logo.png" alt="Hawkins Logo" width="100" height="80" class="mr-2">
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown"
+           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+
+        <div class="dropdown-menu ">
+          <a class="dropdown-item active" href="electronics.html">Electronics</a>
+          <a class="dropdown-item " href="fashion.html">Fashion</a>
+          <a class="dropdown-item " href="groceries.html">Groceries</a>
+        </div>
+      </li>
+
+             <div class="box">
+                  <div class="cart-count">0</div>
+                  <button class="ml-2" style="border:0px;" id="cart-icon">
+                    <i class="fa-solid fa-basket-shopping" style="color: #2a1ed2;"></i>
+                  </button> 
+             </div>
+             
+             <div class="cart">
+                <h4 class="cart-title">Cart Items</h4>
+                <button id="close-icon">X</button>
+        
+                <div class="cart-content">
+
+                  <!-- <div class="total">
+                    <div class="total-title">Total Amount</div>
+                    <div class="total-price">Rs.0</div>
+                  </div> -->
+                </div>
+            </div>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="electronics-bg">
+    <h1 class="text-center pt-4">
+        <strong style="color:rgb(255, 66, 45);" class="title-card-effect"> ELECTRONICS</strong>
+    </h1>
+
+  <div class="container mt-5" >
+    <div class="row" >
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="electronic-prod-img-cont">
+                <img src="mobile.png"  class="electronic-prod-img"/>
+                <h4 class="prod-title">Mobiles</h4>
+                <p  class="prod-price">Rs.30,000</p>
+                <button class="btn btn-primary m-2">Buy Now</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+            <div class="electronic-prod-img-cont">
+                <img src="laptops.png"  class="electronic-prod-img"/>
+                <h4 class="prod-title">Laptops</h4>
+                <p class="prod-price">Rs.85,000</p>
+                <button class="btn btn-primary m-2">Buy Now</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
+            </div>
+         </div>  
+
+         <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+            <div class="electronic-prod-img-cont">
+                <img src="watch.png" class="electronic-prod-img"/>
+                <h4 class="prod-title">Smart Watches</h4>
+                <p class="prod-price">Rs.5,999</p>
+                <button class="btn btn-primary m-2">Buy Now</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
+            </div>
+        </div>  
+
+         <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+            <div class="electronic-prod-img-cont">
+                <img src="tv.png"  class="electronic-prod-img"/>
+                <h4 class="prod-title">LED Tv</h4>
+                <p class="prod-price">Rs.35,000</p>
+                
+                <button class="btn btn-primary m-2">Buy Now</button>
+                <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+       <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+         <div class="electronic-prod-img-cont">
+            <img src="fridge.png" class="electronic-prod-img"/>
+            <h4 class="prod-title">Refrigerator</h4>
+            <p class="prod-price">Rs.69,000</p>
+            <button class="btn btn-primary m-2">Buy Now</button>
+            <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
+        </div>
+       </div>
+
+       <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+         <div class="electronic-prod-img-cont">
+            <img src="washing-mc.png" class="electronic-prod-img"/>
+            <h4 class="prod-title">Washing Machine</h4>
+            <p class="prod-price">Rs.37,790</p>
+            <button class="btn btn-primary m-2">Buy Now</button>
+            <button class="btn btn-outline-warning add-to-cart">Add to Cart</button>
+        </div>
+       </div>
+             
+        </div>
+
+        
+        </div>
+    </div>
+
+<div>                
+                <footer>
+                        <div class="footer-div">
+                            <a href="index.html" class="anchor2">Home</a>
+                            <a href="products.html" class="anchor2">Products</a> 
+                        </div>
+                    <hr>
+                            <h1 style="text-align:center; margin-top:50px;">Follow Us on</h1>
+                            <div style="display:flex; justify-content: space-evenly;">
+                            <div>
+                                <i class="fa-brands fa-instagram" style="color: #ff1ac2;"></i>
+                                <a href="https://www.instagram.com" target =_blank draggable="true">Instagram</a>
+                            </div>
+                            <br>
+                        <div> 
+                                <i class="fa-brands fa-facebook" style="color: #065df4;"></i>
+                                <a href="https://www.facebook.com" target =_blank draggable="true">Facebook</a>
+                            </div> 
+                        <br> 
+                        <div>
+                                <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                                <a href="https://www.twitter.com" target =_blank draggable="true">Twitter</a>
+                            </div>
+                            
+                        </div>
+                        <p class="foot mt-4">&copy 2025 hawkins. All rights reserved.</p>
+                    </footer>  
+            </div>    
+  </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
